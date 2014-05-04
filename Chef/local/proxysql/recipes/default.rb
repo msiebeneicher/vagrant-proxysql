@@ -27,19 +27,19 @@ bash "update apt" do
 end
 
 # Needed to compile / bundle install it
-apt_package "libssl-dev" do
+package "libssl-dev" do
   action :install
 end
 
-apt_package "libglib2.0-dev" do
+package "libglib2.0-dev" do
   action :install
 end
 
-apt_package "libmysqlclient-dev" do
+package "libmysqlclient-dev" do
   action :install
 end
 
-apt_package "make" do
+package "make" do
   action :install
 end
 
